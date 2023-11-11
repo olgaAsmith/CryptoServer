@@ -1,19 +1,25 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { openSans } from '@/public/fonts/fonts';
 import './globals.scss';
 import React from 'react';
-
-const inter = Inter({ subsets: ['latin'] });
+import Header from './components/Main/Header/Header';
+import Footer from './components/Main/Footer/Footer';
 
 export const metadata: Metadata = {
-  title: 'Crypto Server',
+  title: 'Crypto Sever',
   description: 'Crypto Server web app'
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={openSans.className}>
+        <div className='app__main'>
+          <Header></Header>
+          {children}
+          <Footer></Footer>
+        </div>
+      </body>
     </html>
   );
 }

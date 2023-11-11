@@ -1,3 +1,37 @@
 body {
+    margin: 0;
     background: #000;
+    color: #FFF;
+}
+
+.app__main {
+    width: calc(100% - 240px);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity .4s;
+    &:hover {
+        opacity: .6;
+    }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 75px;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 1px solid #26A9E0;
+}
+
+.button_blue {
+    background: linear-gradient(270deg, #004AAD 0%, #26A9E0 99.99%, #26A9E0 100%);
+    border: none;
 }

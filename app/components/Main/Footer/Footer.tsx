@@ -1,10 +1,7 @@
-import styles from './Footer.scss';
+import styles from './Footer.module.scss';
 
 const Footer = () => {
-  return (
-    <main className={}>
-    </main>
-  );
-}
+  return <footer className={styles.footer}></footer>;
+};
 
 export default Footer;
