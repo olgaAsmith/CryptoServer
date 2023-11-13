@@ -8,8 +8,8 @@ const Request = () => {
     <section className={styles.request}>
       <form className={styles.request__form}>
         <Selector></Selector>
-        <input type="text" placeholder="Колличество" className={`${styles.request__input} button`}></input>
-        <input type="text" placeholder="Телефон" className={`${styles.request__input} button`}></input>
+        <input type="number" placeholder="Колличество" className={`${styles.request__input} button`}></input>
+        <input type="number" placeholder="Телефон" className={`${styles.request__input} button`}></input>
         <input type="text" placeholder="Телеграм" className={`${styles.request__input} button`}></input>
         <button type="submit" style={localBebas.style} className={`${styles.request__submit} button button_blue link`}>Отправить заявку</button>
       </form>

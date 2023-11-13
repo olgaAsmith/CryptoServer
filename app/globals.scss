@@ -61,9 +61,9 @@ h3 {
 .link {
   text-decoration: none;
   color: inherit;
-  transition: opacity 0.4s;
+  cursor: pointer;
   &:hover {
-    opacity: 0.6;
+    border: 3px solid #26a9e0;
   }
 }
 
@@ -84,4 +84,20 @@ h3 {
 .button_blue {
   background: linear-gradient(270deg, #004aad 0%, #26a9e0 99.99%, #26a9e0 100%);
   border: none;
+  transition: opacity 0.2s;
+  &:hover {
+    border: none;
+    opacity: .8;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus {
+  outline:none;
+  outline: 3px solid #26a9e0;
 }

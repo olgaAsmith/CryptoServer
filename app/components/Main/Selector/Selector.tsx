@@ -20,7 +20,9 @@ const Selector = () => {
   };
 
   return (
-    <div className={`${styles.select} button`}>
+    <div className={`${styles.select} ${
+      toggleOpen ? styles.select_active : ""
+    } button`}>
       <div onClick={clickOnSelect} className={`${styles.select__header}`}>
         <span className={styles.select__current}>{selectedValue}</span>
         <div className={styles.select__icon}></div>

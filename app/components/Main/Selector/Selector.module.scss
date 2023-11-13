@@ -6,7 +6,14 @@
     font-weight: 700;
     line-height: normal;
     margin-bottom: 30px;
-
+    &:hover {
+      border: 3px solid #26a9e0;
+    }
+    
+    &_active {
+      border: 3px solid #26a9e0;
+    }
+    
     &__header {
       width: 100%;
       display: flex;
@@ -14,6 +21,7 @@
       cursor: pointer;
       align-items: center;
       padding: 19px 19px 19px 30px;
+      
     }
   
     &__icon {
@@ -55,6 +63,8 @@
   
       &:hover {
         color: #26A9E0;
+        border: 3px solid #26a9e0;
+
       }
     }
   }
