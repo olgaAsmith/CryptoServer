@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background: #000;
@@ -15,6 +19,19 @@ h1,h2,h3,p,ul {
 
 ul {
     list-style: none;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .app__main {
