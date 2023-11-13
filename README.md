@@ -1,3 +1,3 @@
-### Crypto Server
+### Crypto Sever
 
 ##### Start using crypts
