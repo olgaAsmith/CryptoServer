@@ -1,17 +1,17 @@
 .nav {
-    display: flex;
-    text-transform: uppercase;
-}
+  display: flex;
+  text-transform: uppercase;
 
-.nav__sighin {
+  &__sighin {
     width: 130px;
     height: 50px;
     font-size: 24px;
-}
+  }
 
-.nav__reg {
+  &__reg {
     width: 175px;
     height: 50px;
     margin-left: 30px;
     font-size: 24px;
+  }
 }

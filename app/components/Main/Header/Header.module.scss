@@ -1,16 +1,16 @@
 .header {
-    width: calc(100% - 240px);
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-}
+  width: calc(100% - 240px);
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
 
-.header__logo {
+  &__logo {
     width: 185px;
     height: 85px;
     background-image: url(../../../../public/images/logo.svg);
     background-repeat: no-repeat;
     background-position: center;
+  }
 }

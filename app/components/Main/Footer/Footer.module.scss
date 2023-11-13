@@ -1,13 +1,13 @@
 .footer {
-    width: calc(100% - 240px);
-    max-width: 1200px;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-    margin: auto;
-}
+  width: calc(100% - 240px);
+  max-width: 1200px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin: auto;
 
-.footer__copy {
+  &__copy {
     padding-bottom: 30px;
-    opacity: .6;
+    opacity: 0.6;
+  }
 }
