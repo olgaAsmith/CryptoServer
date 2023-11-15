@@ -1,23 +1,86 @@
+@import '../../../../public/utils/mixins.scss';
+
 .request {
   display: flex;
+  width: calc(100% - 240px);
+  margin: auto;
+  max-width: 1200px;
   justify-content: space-between;
   padding: 100px 0;
+  position: relative;
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+
+  @include phone-bg;
+  @include tablet {
+    width: 100%;
+    padding: 200px 30px;
+  }
+
+  @include desktop {
+    flex-direction: column-reverse;
+    gap: 130px;
+  }
+
+  @include phone {
+    gap: 60px;
+  }
 
   &__form {
     width: 45%;
     display: flex;
     flex-direction: column;
     padding-top: 20px;
+
+    @include desktop {
+      width: 70%;
+      margin: auto;
+    }
+
+    @include phone {
+      width: 100%;
+    }
+
   }
 
   &__br {
     width: 2px;
     height: 544px;
     background: rgba(38, 169, 224, 0.6) 0%;
+
+    @include desktop {
+      width: 80%;
+      height: 2px;
+      margin: auto;
+    }
+
+    @include phone {
+      width: 100%;
+    }
   }
 
   &__info {
     width: 45%;
+
+    @include desktop {
+      width: 70%;
+      margin: auto;
+      text-align: center;
+    }
+
+    @include phone {
+      width: 100%;
+    }
   }
 
   &__title {
@@ -31,10 +94,23 @@
 
   &__reg {
     margin-top: 65px;
+
+    @include desktop {
+      margin: 65px auto 0;
+    }
+
+    @include phone {
+      width: 100%;
+    }
   }
 
   &__submit {
     margin-top: 20px;
+
+    @include phone {
+      width: 100%;
+    }
+    
   }
 
   &__input {

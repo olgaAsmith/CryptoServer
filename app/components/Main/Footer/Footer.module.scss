@@ -1,3 +1,6 @@
+@import '../../../../public/utils/mixins.scss';
+
+
 .footer {
   width: calc(100% - 240px);
   max-width: 1200px;
@@ -6,8 +9,19 @@
   justify-content: end;
   margin: auto;
 
+  @include tablet-width;
+  @include desktop {
+    align-items: center;
+    justify-content: center;
+  }
+
   &__copy {
     padding-bottom: 30px;
     opacity: 0.6;
+
+    @include desktop {
+      text-align: center;
+      font-size: 11px;
+    }
   }
 }

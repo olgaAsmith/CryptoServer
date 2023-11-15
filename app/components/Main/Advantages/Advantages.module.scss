@@ -1,5 +1,8 @@
+@import "../../../../public/utils/mixins.scss";
+
 .advantages {
-  padding-top: 190px;
+  padding: 190px 120px 0;
+  width: 100%;
   position: relative;
   &:before {
     content: '';
@@ -13,15 +16,25 @@
     background-position: center;
     z-index: -1;
   }
-
+  
+  @include phone-bg;
+  @include tablet {
+    padding: 0 30px;
+  }
+  
   &__list {
     padding: 75px 0 135px;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
-  }
 
+    @include tablet {
+      padding: 50px 0 0;
+    }
+
+  }
+  
   &__item {
     width: 380px;
     height: 421px;
@@ -30,27 +43,37 @@
     gap: 30px;
     text-align: center;
     padding: 50px 0px;
+    
   }
+  
   &__item_advantage {
     border-radius: 30px;
     border: 2px solid #26a9e0;
     padding: 50px 30px;
+    
+    @include tablet {
+      padding: 20px 20px;
+    }
   }
-
+  
   &__title {
     width: 575px;
     margin: auto;
     text-align: center;
-  }
 
+    @include desktop {
+      width: 100%;
+    }
+  }
+  
   &__subtitle {
     min-height: 66px;
   }
-
+  
   &__text {
     min-height: 88px;
   }
-
+  
   &__image {
     width: 170px;
     height: 170px;

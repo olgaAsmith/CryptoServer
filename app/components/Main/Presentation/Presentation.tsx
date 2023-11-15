@@ -21,9 +21,6 @@ const Presentaion = () => {
           </Link>
         </div>
       </div>
-      <div className={styles.presentation__image}>
-        <div className={styles.presentation__bg}></div>
-      </div>
     </section>
   );
 };
