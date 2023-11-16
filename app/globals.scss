@@ -69,10 +69,10 @@ h3 {
     background-image: url('../public/images/headerGradient.png');
     background-repeat: no-repeat;
     z-index: -1;
-  } 
-    @include tablet {
-      &:before {
-        background-image: url('');
+  }
+  @include tablet {
+    &:before {
+      background-image: url('');
     }
   }
 
@@ -112,17 +112,17 @@ h3 {
   transition: opacity 0.2s;
   &:hover {
     border: none;
-    opacity: .8;
+    opacity: 0.8;
   }
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input:focus {
-  outline:none;
+  outline: none;
   outline: 3px solid #26a9e0;
 }

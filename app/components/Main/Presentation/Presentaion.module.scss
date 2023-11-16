@@ -23,10 +23,10 @@
     line-height: normal;
     letter-spacing: 2.1px;
 
-    @include tablet{
+    @include tablet {
       font-size: 60px;
     }
-    @include phone{
+    @include phone {
       font-size: 35px;
     }
   }
@@ -56,7 +56,7 @@
 
   &__text {
     margin-top: 13px;
-  
+
     @include desktop {
       font-size: 16px;
     }

@@ -20,14 +20,16 @@ const Navigation = () => {
     <nav className={styles.menu}>
       <div
         className={`${isBurgerMenuOpen ? styles.burger_active : styles.burger}`}
-        onClick={clickOnBurgerMenu}></div>
+        onClick={clickOnBurgerMenu}
+      ></div>
       <ul className={`${styles.nav} ${isBurgerMenuOpen ? styles.nav_active : ''}`}>
         <li>
           <Link
             href="/"
             style={localBebas.style}
             className={`${styles.nav__link} ${styles.nav__sighin} link button button_blue`}
-            onClick={handleClickMenu}>
+            onClick={handleClickMenu}
+          >
             Вход
           </Link>
         </li>
@@ -36,7 +38,8 @@ const Navigation = () => {
             href="/"
             style={localBebas.style}
             className={`${styles.nav__link} ${styles.nav__reg} link button`}
-            onClick={handleClickMenu}>
+            onClick={handleClickMenu}
+          >
             Регистрация
           </Link>
         </li>

@@ -8,7 +8,7 @@ const Header = () => {
       <Link href="#" className={styles.header__logo}></Link>
       <Navigation></Navigation>
     </header>
-  )
+  );
 };
 
 export default Header;
