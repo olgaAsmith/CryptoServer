@@ -1,6 +1,30 @@
+@import '../../../public/utils/mixins.scss';
+
 .nav {
   display: flex;
   text-transform: uppercase;
+
+  @include tablet {
+    width: 100%;
+    position: absolute;
+    top: -300px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0, .9);
+    gap: 10px;
+    padding: 50px 0px 120px 0px;
+    font-size: 14px;
+    transition: top 1.3s;
+    z-index: 1000;
+    &_active{
+      top: 0px;
+    }
+  }
+  @include phone {
+    align-items: start;
+  }
 
   &__sighin {
     width: 130px;
@@ -13,5 +37,70 @@
     height: 50px;
     margin-left: 30px;
     font-size: 24px;
+    @include tablet {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    @include desktopXL{
+      width: 200px !important;
+      height: 50px !important;
+    }
+    @include phone{
+      width: 200px !important;
+      height: 50px !important;
+      margin-left: 30px;
+    }
+  }
+}
+
+.burger {
+  display: none;
+
+  @include tablet {
+      display: block;
+      position: relative;
+      width: 40px;
+      height: 35px;
+      border-bottom: 4px #fff solid;
+      border-top: 4px #fff solid;
+      z-index: 1001;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: #fff;
+      left: 0;
+      top: 12px;
+    }
+  }
+  &_active {
+    display: none;
+    @include tablet {
+      display: block;
+      position: relative;
+      width: 40px;
+      height: 25px;
+      z-index: 1001;
+    }
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 5px;
+      background: #fff;
+      top: 8px;
+      left: 2px;
+    }
+    &::after {
+      rotate: -45deg;
+    }
+    &::before {
+      rotate: 45deg;
+    }
   }
 }
