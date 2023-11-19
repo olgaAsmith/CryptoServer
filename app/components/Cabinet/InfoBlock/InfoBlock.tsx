@@ -19,14 +19,14 @@ const InfoBlock = () => {
           <li className={styles.info__course}>1 USDC = 62,04 </li>
           <li className={styles.info__course}>1 ETH = 122 590,20 </li>
         </ul>
-        <button className={styles.info__value}>Обновить</button>
+        <button className={styles.info__button}>Обновить</button>
       </div>
       <div className={`${styles.info__card} ${styles.info__name_wallet}`}>
         <p className={styles.info__name}>Ваш кошелёк</p>
         <p className={`${styles.value} ${styles.info__walletcode}`}>
           1GkQdmiGfiUPGwqDhSgoEkPCcutkLpmbMz
         </p>
-        <button className={styles.info__value}>Скопировать</button>
+        <button className={styles.info__button}>Скопировать</button>
       </div>
     </section>
   );

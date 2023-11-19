@@ -49,4 +49,8 @@
     font-size: 20px;
     font-weight: 400;
   }
+
+  &__button {
+    @include button-cabinet('../images/copy.svg', 40px, 30px, 20px);
+  }
 }
