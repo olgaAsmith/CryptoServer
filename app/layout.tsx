@@ -4,6 +4,7 @@ import './globals.scss';
 import React from 'react';
 import Header from './components/Main/Header/Header';
 import Footer from './components/Main/Footer/Footer';
+import BgMain from './components/BgMain/BgMain';
 
 export const metadata: Metadata = {
   title: 'Crypto Sever',
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={openSans.className}>
         <div className="app__main">
+          <BgMain></BgMain>
           <Header></Header>
           {children}
           <Footer></Footer>

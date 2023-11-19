@@ -20,4 +20,13 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  &_cabinet {
+    width: calc(100% - 240px);
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
 }
