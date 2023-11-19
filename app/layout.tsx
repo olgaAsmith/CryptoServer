@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { openSans } from '@/public/fonts/fonts';
 import './globals.scss';
 import React from 'react';
-import Header from './components/Main/Header/Header';
-import Footer from './components/Main/Footer/Footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import BgMain from './components/BgMain/BgMain';
 
 export const metadata: Metadata = {
