@@ -1,5 +1,5 @@
 import styles from './InfoBlock.module.scss';
-
+//
 const InfoBlock = () => {
   return (
     <section className={styles.info}>
